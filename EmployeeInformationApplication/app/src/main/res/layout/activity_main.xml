@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Employee Details"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/empNoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:hint="Employee No" />
+
+        <EditText
+            android:id="@+id/empNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/empDesignationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:hint="Designation" />
+
+        <EditText
+            android:id="@+id/empSalaryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:hint="Salary" />
+
+        <Button
+            android:id="@+id/insertDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:onClick="onClickAddDetails"
+            android:text="Insert Data" />
+
+        <Button
+            android:id="@+id/loadDataButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:onClick="onClickLoadDetails"
+            android:text="Load Data" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
